@@ -77,7 +77,11 @@ def check_int(
         '__is', 
         '__not', 
         '__in', 
-        '__not_in'
+        '__not_in',
+        '__gt',
+        '__lt',
+        '__gte',
+        '__lte'
     ]:
         return False
 
@@ -89,6 +93,14 @@ def check_int(
         return data in expected_match[first_key]
     if first_key == '__not_in' and _is_int_list(expected_match[first_key]):
         return data not in expected_match[first_key]
+    if first_key == '__gt' and _is_int(expected_match[first_key]):
+        return data > expected_match[first_key]
+    if first_key == '__lt' and _is_int(expected_match[first_key]):
+        return data < expected_match[first_key]
+    if first_key == '__gte' and _is_int(expected_match[first_key]):
+        return data >= expected_match[first_key]
+    if first_key == '__lte' and _is_int(expected_match[first_key]):
+        return data <= expected_match[first_key]
     
     return False
 
@@ -112,7 +124,11 @@ def check_float(
         '__is', 
         '__not', 
         '__in', 
-        '__not_in'
+        '__not_in',
+        '__gt',
+        '__lt',
+        '__gte',
+        '__lte'
     ]:
         return False
 
@@ -124,6 +140,14 @@ def check_float(
         return data in expected_match[first_key]
     if first_key == '__not_in' and _is_float_list(expected_match[first_key]):
         return data not in expected_match[first_key]
+    if first_key == '__gt' and _is_float(expected_match[first_key]):
+        return data > expected_match[first_key]
+    if first_key == '__lt' and _is_float(expected_match[first_key]):
+        return data < expected_match[first_key]
+    if first_key == '__gte' and _is_float(expected_match[first_key]):
+        return data >= expected_match[first_key]
+    if first_key == '__lte' and _is_float(expected_match[first_key]):
+        return data <= expected_match[first_key]
     
     return False
 

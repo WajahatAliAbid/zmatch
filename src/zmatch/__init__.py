@@ -1,4 +1,4 @@
-from .check import (
+from .lib import (
     check,
     check_bool,
     check_dict,

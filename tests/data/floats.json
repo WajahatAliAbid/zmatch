@@ -1,0 +1,135 @@
+    [
+        {
+            "input": 18.2,
+            "test": 18.2,
+            "output": true
+        },
+        {
+            "input": 18.2,
+            "test": 19.3,
+            "output": false
+        },
+        {
+            "input": 18.2,
+            "test": {
+                "__is": 18.2
+            },
+            "output": true
+        },
+        {
+            "input": 18.2,
+            "test": {
+                "__is": 19.3
+            },
+            "output": false
+        },
+        {
+            "input": 18.2,
+            "test": {
+                "__not": 19.3
+            },
+            "output": true
+        },
+        {
+            "input": 18.2,
+            "test": {
+                "__not": 18.2
+            },
+            "output": false
+        },
+        {
+            "input": 18.2,
+            "test": {
+                "__in": [
+                    18.2,
+                    20.4
+                ]
+            },
+            "output": true
+        },
+        {
+            "input": 18.2,
+            "test": {
+                "__in": [
+                    20.4,
+                    22.6
+                ]
+            },
+            "output": false
+        },
+        {
+            "input": 18.2,
+            "test": {
+                "__not_in": [
+                    19.3
+                ]
+            },
+            "output": true
+        },
+        {
+            "input": 18.2,
+            "test": {
+                "__not_in": [
+                    18.2,
+                    20.4
+                ]
+            },
+            "output": false
+        },
+        {
+            "input": 18.2,
+            "test": {
+                "__lt": 19.3
+            },
+            "output": true
+        },
+        {
+            "input": 18.2,
+            "test": {
+                "__gt": 12.3
+            },
+            "output": true
+        },
+        {
+            "input": 18.2,
+            "test": {
+                "__gt": 19.3
+            },
+            "output": false
+        },
+        {
+            "input": 18.2,
+            "test": {
+                "__lt": 12.3
+            },
+            "output": false
+        },
+        {
+            "input": 18.2,
+            "test": {
+                "__gte": 18.2
+            },
+            "output": true
+        },
+        {
+            "input": 18.2,
+            "test": {
+                "__lte": 19.3
+            },
+            "output": true
+        },
+        {
+            "input": 18.2,
+            "test": {
+                "__lte": 17.2
+            },
+            "output": false
+        },
+        {
+            "input": 18.2,
+            "test": {
+                "__gte": 19.3
+            },
+            "output": false
+        }
+    ]

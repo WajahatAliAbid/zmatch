@@ -19,7 +19,12 @@ def test_strings(input, test, assertion):
 def test_strings_bad(input, test, assertion):
     assert zmatch.check_str(input, test) == assertion
 
-# @pytest.mark.parametrize("input, test, assertion", load_test_data("ints"))
-# def test_strings(input, test, assertion):
-#     assert zmatch.check(input, test) == assertion
+@pytest.mark.parametrize("input, test, assertion", load_test_data("ints"))
+def test_ints(input, test, assertion):
+    assert zmatch.check_int(input, test) == assertion
+
+
+@pytest.mark.parametrize("input, test, assertion", load_test_data("floats"))
+def test_floats(input, test, assertion):
+    assert zmatch.check_float(input, test) == assertion
     

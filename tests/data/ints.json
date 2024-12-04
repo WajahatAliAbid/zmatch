@@ -1,19 +1,134 @@
 [
     {
-        "input": {
-            "age": 18
-        },
+        "input": 18,
+        "test": 18,
+        "output": true
+    },
+    {
+        "input": 18,
+        "test": 19,
+        "output": false
+    },
+    {
+        "input": 18,
         "test": {
-            "age": 18
+            "__is": 18
         },
         "output": true
     },
     {
-        "input": {
-            "age": 18
-        },
+        "input": 18,
         "test": {
-            "age": 19
+            "__is": 19
+        },
+        "output": false
+    },
+    {
+        "input": 18,
+        "test": {
+            "__not": 19
+        },
+        "output": true
+    },
+    {
+        "input": 18,
+        "test": {
+            "__not": 18
+        },
+        "output": false
+    },
+    {
+        "input": 18,
+        "test": {
+            "__in": [
+                18,
+                20
+            ]
+        },
+        "output": true
+    },
+    {
+        "input": 18,
+        "test": {
+            "__in": [
+                20,
+                22
+            ]
+        },
+        "output": false
+    },
+    {
+        "input": 18,
+        "test": {
+            "__not_in": [
+                19
+            ]
+        },
+        "output": true
+    },
+    {
+        "input": 18,
+        "test": {
+            "__not_in": [
+                18,
+                20
+            ]
+        },
+        "output": false
+    },
+    {
+        "input": 18,
+        "test": {
+            "__lt": 19
+        },
+        "output": true
+    },
+    {
+        "input": 18,
+        "test": {
+            "__gt": 12
+        },
+        "output": true
+    },
+    {
+        "input": 18,
+        "test": {
+            "__gt": 19
+        },
+        "output": false
+    },
+    {
+        "input": 18,
+        "test": {
+            "__lt": 12
+        },
+        "output": false
+    },
+    {
+        "input": 18,
+        "test": {
+            "__gte": 18
+        },
+        "output": true
+    },
+    {
+        "input": 18,
+        "test": {
+            "__lte": 19
+        },
+        "output": true
+    },
+    {
+        "input": 18,
+        "test": {
+            "__lte": 17
+        },
+        "output": false
+    },
+    {
+        "input": 18,
+        "test": {
+            "__gte": 19
         },
         "output": false
     }
