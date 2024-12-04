@@ -1,0 +1,40 @@
+[
+    {
+        "input": 123,
+        "test": "abc",
+        "output": false
+    },
+    {
+        "input": "John",
+        "test": 123,
+        "output": false
+    },
+    {
+        "input": "John",
+        "test": {
+            "__is": 123
+        },
+        "output": false
+    },
+    {
+        "input": "John",
+        "test": {
+            "__not": 123
+        },
+        "output": false
+    },
+    {
+        "input": "John",
+        "test": {
+            "__in": 123
+        },
+        "output": false
+    },
+    {
+        "input": "John",
+        "test": {
+            "__in": "John"
+        },
+        "output": false
+    }
+]

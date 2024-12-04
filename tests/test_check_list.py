@@ -18,6 +18,9 @@ input_data = {
     "numbers": [
         1,2,3,4
     ],
+    "bools": [
+        True, False
+    ],
     "salary": 85000.50,  # Float
     "activity_log": [
         {"date": "2024-11-01", "action": "login", "status": "success"},  # Dict
@@ -36,7 +39,7 @@ def test_match_single_item():
     assert check(
         input_data, expected_match={
             "numbers": {
-                "__contains": 1
+                "__contains": 2
             }
         }
     )

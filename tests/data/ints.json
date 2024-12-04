@@ -1,0 +1,20 @@
+[
+    {
+        "input": {
+            "age": 18
+        },
+        "test": {
+            "age": 18
+        },
+        "output": true
+    },
+    {
+        "input": {
+            "age": 18
+        },
+        "test": {
+            "age": 19
+        },
+        "output": false
+    }
+]

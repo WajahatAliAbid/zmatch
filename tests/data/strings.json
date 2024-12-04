@@ -1,0 +1,102 @@
+[
+    {
+        "input": "John",
+        "test": "John",
+        "output": true
+    },
+    {
+        "input": {
+            "name": "John"
+        },
+        "test": {
+            "name": "Ali"
+        },
+        "output": false
+    },
+    {
+        "input": "John",
+        "test": {
+            "__is": "John"
+        },
+        "output": true
+    },
+    {
+        "input": "John",
+        "test": {
+            "__is": "Ali"
+        },
+        "output": false
+    },
+    {
+        "input": "John",
+        "test": {
+            "__not": "John"
+        },
+        "output": false
+    },
+    {
+        "input": "John",
+        "test": {
+            "__not": "Ali"
+        },
+        "output": true
+    },
+    {
+        "input": "John",
+        "test": {
+            "__in": [
+                "John",
+                "Ali"
+            ]
+        },
+        "output": true
+    },
+    {
+        "input": "John",
+        "test": {
+            "__not_in": [
+                "Lenny",
+                "Ali"
+            ]
+        },
+        "output": true
+    },
+    {
+        "input": "John",
+        "test": {
+            "__not_in": [
+                "John",
+                "Ali"
+            ]
+        },
+        "output": false
+    },
+    {
+        "input": "John",
+        "test": {
+            "__matches": "^[Jj]ohn$"
+        },
+        "output": true
+    },
+    {
+        "input": "John",
+        "test": {
+            "__matches": "^[Jj]ohn$"
+        },
+        "output": true
+    },
+    {
+        "input": "John",
+        "test": {
+            "__not_matches": "^[Aa]li$"
+        },
+        "output": true
+    },
+    {
+        "input": "John",
+        "test": {
+            "__not_matches": "^[Aa]li$"
+        },
+        "output": true
+    }
+]
